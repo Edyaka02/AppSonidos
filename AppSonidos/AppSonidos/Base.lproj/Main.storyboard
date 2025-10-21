@@ -16,62 +16,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-PV-zFg">
-                                <rect key="frame" x="121" y="59" width="150" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-mm-Jo8">
+                                <rect key="frame" x="112" y="100" width="150" height="466"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-PV-zFg">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="b3O-ir-jsd"/>
+                                            <constraint firstAttribute="height" constant="150" id="fhX-8c-fH4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="gato2" imageContentMode="scaleToFill"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playSoundCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhG-uv-PZi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02C-xB-UF0">
+                                        <rect key="frame" x="0.0" y="158" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="SVx-Hq-mec"/>
+                                            <constraint firstAttribute="width" constant="150" id="U3X-Qa-e93"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="grillo2" imageContentMode="scaleToFill"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playSoundCriCri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wh1-V1-gge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-BL-c1m">
+                                        <rect key="frame" x="0.0" y="316" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="E9O-zF-9x9"/>
+                                            <constraint firstAttribute="height" constant="150" id="lwf-47-ghO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="perro2" imageContentMode="scaleToFill"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playSoundDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovg-4e-kic"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="b3O-ir-jsd"/>
-                                    <constraint firstAttribute="height" constant="150" id="fhX-8c-fH4"/>
+                                    <constraint firstAttribute="width" secondItem="XGE-mm-Jo8" secondAttribute="height" multiplier="75:233" id="yx3-CF-fiP"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="gato2" imageContentMode="scaleToFill"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playSoundCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhG-uv-PZi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02C-xB-UF0">
-                                <rect key="frame" x="121" y="258" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="SVx-Hq-mec"/>
-                                    <constraint firstAttribute="width" constant="150" id="U3X-Qa-e93"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="grillo2" imageContentMode="scaleToFill"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playSoundCriCri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wh1-V1-gge"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-BL-c1m">
-                                <rect key="frame" x="121" y="463" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="E9O-zF-9x9"/>
-                                    <constraint firstAttribute="height" constant="150" id="lwf-47-ghO"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="perro2" imageContentMode="scaleToFill"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playSoundDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovg-4e-kic"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.42679550293602081" green="0.14057308260464846" blue="0.58785315702870955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="BUf-BL-c1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="1A3-ZG-4eA"/>
-                            <constraint firstItem="BUf-BL-c1m" firstAttribute="top" secondItem="02C-xB-UF0" secondAttribute="bottom" constant="55" id="41i-6A-XW1"/>
-                            <constraint firstItem="02C-xB-UF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="EHa-s2-qD3"/>
-                            <constraint firstItem="L2Q-PV-zFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="EMF-FW-bmI"/>
-                            <constraint firstItem="02C-xB-UF0" firstAttribute="top" secondItem="L2Q-PV-zFg" secondAttribute="bottom" constant="49" id="GGh-yU-GOe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BUf-BL-c1m" secondAttribute="bottom" constant="54" id="Ggb-DU-5j6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BUf-BL-c1m" secondAttribute="trailing" constant="122" id="IMr-hy-aIZ"/>
-                            <constraint firstItem="L2Q-PV-zFg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="Njr-ql-F1z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="02C-xB-UF0" secondAttribute="trailing" constant="122" id="a4j-Fh-YDd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L2Q-PV-zFg" secondAttribute="trailing" constant="122" id="m8k-QP-OGR"/>
+                            <constraint firstItem="XGE-mm-Jo8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="DkO-24-rgg"/>
+                            <constraint firstItem="XGE-mm-Jo8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="J3W-1x-zML"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XGE-mm-Jo8" secondAttribute="trailing" constant="113" id="gGA-6Y-P7X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XGE-mm-Jo8" secondAttribute="bottom" constant="101" id="kSt-d7-vBA"/>
                         </constraints>
                     </view>
                 </viewController>
