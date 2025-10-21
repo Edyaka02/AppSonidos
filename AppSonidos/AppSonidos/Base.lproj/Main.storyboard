@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-mm-Jo8">
-                                <rect key="frame" x="112" y="100" width="150" height="466"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-mm-Jo8">
+                                <rect key="frame" x="112" y="68" width="150" height="530"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-PV-zFg">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02C-xB-UF0">
-                                        <rect key="frame" x="0.0" y="158" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="190" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="SVx-Hq-mec"/>
                                             <constraint firstAttribute="width" constant="150" id="U3X-Qa-e93"/>
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-BL-c1m">
-                                        <rect key="frame" x="0.0" y="316" width="150" height="150"/>
+                                        <rect key="frame" x="0.0" y="380" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="E9O-zF-9x9"/>
                                             <constraint firstAttribute="height" constant="150" id="lwf-47-ghO"/>
@@ -62,9 +62,8 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XGE-mm-Jo8" secondAttribute="height" multiplier="75:233" id="yx3-CF-fiP"/>
-                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
